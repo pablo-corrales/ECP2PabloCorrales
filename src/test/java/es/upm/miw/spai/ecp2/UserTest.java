@@ -8,8 +8,8 @@ import org.junit.Test;
 public class UserTest {
     private User user;
     private static final String NAME="john";
-    private static final String NAME_UPPER="JOHN";
-    private static final String FAMILY_NAME_UPPER="LENON";
+    private static final String NAME_UPPER="John";
+    private static final String FAMILY_NAME_UPPER="Lenon";
     private static final String FAMILY_NAME="lenon";
     @Before
      public void before() {
