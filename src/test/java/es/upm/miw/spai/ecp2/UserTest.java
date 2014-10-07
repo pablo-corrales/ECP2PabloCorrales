@@ -18,8 +18,8 @@ public class UserTest {
     @Test
     public void testUser() {
         assertEquals(111, user.getNumber());
-        assertEquals("john", user.getName());    
-        assertEquals("lenon", user.getFamilyName());     
+        assertEquals("John", user.getName());    
+        assertEquals("Lenon", user.getFamilyName());     
     }
 
     @Test
