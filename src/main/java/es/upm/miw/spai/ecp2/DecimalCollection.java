@@ -34,5 +34,13 @@ public class DecimalCollection {
         }
         return higher;
     }
-
+    public double fewer(){
+       	double fewer = 0.0;
+        for (double item : this.collection) {
+            if (item < fewer)
+                fewer = item;
+        }
+        return fewer;
+    	
+    }
 }
