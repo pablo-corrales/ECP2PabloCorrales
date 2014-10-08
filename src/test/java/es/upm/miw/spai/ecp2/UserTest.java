@@ -30,5 +30,11 @@ public class UserTest {
     public void testInitials(){
          assertEquals(user.initials(),NAME.toUpperCase().substring(0, 1) + ".");
      }
+    
+    @Test
+    public String testUpperName(){
+    	assertEquals(NAME.toUpperCase(), this.user.upperName());
+    }
+    }
 
 }
