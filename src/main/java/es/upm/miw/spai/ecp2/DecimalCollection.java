@@ -35,7 +35,7 @@ public class DecimalCollection {
         return higher;
     }
     public double fewer(){
-       	double fewer = 0.0;
+       	double fewer = Double.POSITIVE_INFINITY;
         for (double item : this.collection) {
             if (item < fewer)
                 fewer = item;
