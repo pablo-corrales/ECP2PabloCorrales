@@ -1,6 +1,7 @@
 package collecionoperaciones;
 
 public class Multiplication {
+	
     private final int operator1, operator2;
 
     public Multiplication(final int operator1, final int operator2) {
@@ -16,7 +17,7 @@ public class Multiplication {
         return operator2;
     }
 
-    public int sum() {
+    public int multiply() {
         return this.operator1 * this.operator2;
     }
 

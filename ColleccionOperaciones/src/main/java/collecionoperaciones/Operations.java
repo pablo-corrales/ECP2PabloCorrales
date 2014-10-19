@@ -29,9 +29,11 @@ public class Operations {
                 System.out.print(separator + operando.toString());
                 if (operando.getClass().getSimpleName().equals("Addition")) {
                     result += ((Summation) operando).sum();
-                } else {
-                    result += ((Subtraction) operando).subtract();
-                }
+                } else if (operando.getClass().getSimpleName().equals("Subtraction")) {
+                    result -= ((Subtraction) operando).subtract();
+                } else if (operando.getClass().getSimpleName().equals("Multiplication")) {
+                    result *= ((Multiplication) operando).multiply();
+              }
             }
             separator = "+";
         }
