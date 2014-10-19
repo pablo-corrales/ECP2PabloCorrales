@@ -16,13 +16,14 @@ public class OperationsHandler {
   }
   
   public int total() {
-      String separator = "";
+     
       int result = 0;
 
       for (Operations operation : operations) {
+    	  
+          System.out.println(operation.toString()+'='+operation.operar());
           result += operation.operar();
-          System.out.print(separator + operation.toString());
-          separator = "+";
+  
       }
      System.out.print(">>> ");
      return result;
