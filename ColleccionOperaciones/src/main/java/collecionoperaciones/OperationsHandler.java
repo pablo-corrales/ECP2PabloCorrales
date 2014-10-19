@@ -16,7 +16,7 @@ public class OperationsHandler {
   }
   
   public int total() {
-      String separator = "";
+     
       int result = 0;
 
       for (Operations operation : operations) {
