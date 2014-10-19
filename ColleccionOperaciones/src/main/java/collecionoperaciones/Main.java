@@ -13,6 +13,7 @@ public class Main {
         operations.add(new Subtraction(4, 1));
         operations.add(new Summation(3, 6));
         operations.add(new Subtraction(3, 2));
+        operations.add(new Multiplication(4,2));
 
         System.out.println("Total2:" + operations.total());
     }
