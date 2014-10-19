@@ -1,43 +1,22 @@
 package collecionoperaciones;
 
-public class Operations {
-    private Object[] operators = new Object[10];
+public abstract class Operations {
+	
+	 	protected int operator1;
+	    protected int operator2;
+	    protected char operator;
 
-    public void add(Object operator) {
-        for (int i = 0; i < operators.length; i++) {
-            if (operators[i] == null) {
-                operators[i] = operator;
+	    public Operations(int operator1,char operator, int operator2) {
+	        this.operator1 = operator1;
+	        this.operator = operator;
+	        this.operator2 = operator2;
+	      
+	    }
 
-                return;
-            }
-        }
-        return;
-    }
+	   protected abstract int operar();
 
-    public void reset() {
-        for (int i = 0; i < operators.length; i++) {
-            operators[i] = null;
-        }
-    }
-
-    // MAL DISEÑADO... MAL CODIFICADO
-    public int total() {
-        int result = 0;
-        String separator = "";
-        for (Object operando : operators) {
-            if (operando != null) {
-                System.out.print(separator + operando.toString());
-                if (operando.getClass().getSimpleName().equals("Addition")) {
-                    result += ((Summation) operando).sum();
-                } else if (operando.getClass().getSimpleName().equals("Subtraction")) {
-                    result -= ((Subtraction) operando).subtract();
-                } else if (operando.getClass().getSimpleName().equals("Multiplication")) {
-                    result *= ((Multiplication) operando).multiply();
-              }
-            }
-            separator = "+";
-        }
-        System.out.print(">>> ");
-        return result;
-    }
+	    @Override
+	    public String toString() {
+	        return "[" + operator1 + operator + operator2 + "]";
+	    }
 }
