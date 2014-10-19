@@ -17,6 +17,7 @@ public class Main {
         operationsHandler.add(new Subtraction(3, 2));
         operationsHandler.add(new Multiplication(3, 2));
         
+            
         System.out.println("Total2:" + operationsHandler.total());
         
                 
